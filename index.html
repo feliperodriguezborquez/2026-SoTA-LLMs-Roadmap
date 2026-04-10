@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A comprehensive learning roadmap for mastering Large Language Models (LLMs) to state-of-the-art level in 2026">
+    <title>Deep Understanding - LLMs Learning Path</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="bg-glow-container">
+        <div class="bg-glow-orb orb-1"></div>
+        <div class="bg-glow-orb orb-2"></div>
+        <div class="bg-glow-orb orb-3"></div>
+    </div>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">🚀</span>
+                    <span class="logo-text">Deep Understanding</span>
+                </div>
+                <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="sidebar-nav" id="chapterNav">
+                <!-- Chapters will be dynamically populated -->
+            </nav>
+            <div class="sidebar-footer">
+                <div class="progress-summary">
+                    <div class="progress-label">
+                        <span>Overall Progress</span>
+                        <span id="overallPercent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="overallProgress"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <h1 id="pageTitle">Dashboard</h1>
+                </div>
+                <div class="header-right">
+                    <div class="stats-quick">
+                        <div class="stat-item">
+                            <span class="stat-value" id="completedCount">0</span>
+                            <span class="stat-label">Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="inProgressCount">0</span>
+                            <span class="stat-label">In Progress</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="totalHours">0h</span>
+                            <span class="stat-label">Est. Time Left</span>
+                        </div>
+                    </div>
+                    <!-- Settings Button -->
+                    <button class="settings-btn" id="settingsBtn" title="Settings">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="3" />
+                            <path
+                                d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+                        </svg>
+                    </button>
+                    <!-- User Menu -->
+                    <div class="user-menu" id="userMenu">
+                        <button class="user-avatar" id="userAvatar" title="Account">
+                            <span id="userInitial">?</span>
+                        </button>
+                        <div class="user-dropdown hidden" id="userDropdown">
+                            <div class="user-email" id="userEmail">Not signed in</div>
+                            <hr>
+                            <a href="auth.html" id="authLink">Sign In</a>
+                            <button id="signOutBtn" class="hidden">Sign Out</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- View Toggle -->
+            <div class="view-toggle" id="viewToggle">
+                <button class="view-btn active" data-view="path" title="Learning Path - Focused, sequential view">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                    Learning Path
+                </button>
+                <button class="view-btn" data-view="explore" title="Explore - See all chapters">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7" />
+                        <rect x="14" y="3" width="7" height="7" />
+                        <rect x="14" y="14" width="7" height="7" />
+                        <rect x="3" y="14" width="7" height="7" />
+                    </svg>
+                    Explore All
+                </button>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-area" id="contentArea">
+                <!-- Dashboard View (default) -->
+                <section class="dashboard-view" id="dashboardView">
+                    <div class="welcome-card">
+                        <div class="welcome-content">
+                            <h2>Welcome to Deep Understanding</h2>
+                            <p>A comprehensive learning path to master Large Language Models from fundamentals to
+                                cutting-edge research.</p>
+                            <div class="welcome-stats">
+                                <div class="welcome-stat">
+                                    <span class="welcome-stat-value" id="totalResources">0</span>
+                                    <span class="welcome-stat-label">Resources</span>
+                                </div>
+                                <div class="welcome-stat">
+                                    <span class="welcome-stat-value" id="totalChapters">0</span>
+                                    <span class="welcome-stat-label">Chapters</span>
+                                </div>
+                                <div class="welcome-stat">
+                                    <span class="welcome-stat-value" id="masteryLevel">0%</span>
+                                    <span class="welcome-stat-label">Mastery</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="welcome-graphic">
+                            <div class="orbit-container">
+                                <div class="orbit orbit-1"></div>
+                                <div class="orbit orbit-2"></div>
+                                <div class="orbit orbit-3"></div>
+                                <div class="planet"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapters-grid" id="chaptersGrid">
+                        <!-- Chapter cards will be dynamically populated -->
+                    </div>
+                </section>
+
+                <!-- Chapter View -->
+                <section class="chapter-view hidden" id="chapterView">
+                    <div class="chapter-header">
+                        <button class="back-btn" id="backBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M19 12H5M12 19l-7-7 7-7" />
+                            </svg>
+                            Back to Dashboard
+                        </button>
+                        <div class="chapter-info">
+                            <span class="chapter-icon" id="chapterIcon">📘</span>
+                            <div>
+                                <h2 id="chapterTitle">Chapter Title</h2>
+                                <p id="chapterDescription">Chapter description goes here</p>
+                            </div>
+                        </div>
+                        <div class="chapter-progress">
+                            <div class="progress-ring">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="progress-ring-bg" cx="50" cy="50" r="45" />
+                                    <circle class="progress-ring-fill" id="chapterProgressRing" cx="50" cy="50"
+                                        r="45" />
+                                </svg>
+                                <span class="progress-text" id="chapterProgressText">0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resources-container" id="resourcesContainer">
+                        <!-- Resources will be dynamically populated -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Status Level Modal -->
+    <div class="modal-overlay hidden" id="statusModal">
+        <div class="modal-content">
+            <h3>Update Progress</h3>
+            <p id="resourceName">Resource Name</p>
+            <div class="status-options">
+                <button class="status-btn" data-status="0">
+                    <span class="status-icon">⚪</span>
+                    <span class="status-label">Not Started</span>
+                </button>
+                <button class="status-btn" data-status="1">
+                    <span class="status-icon">🟡</span>
+                    <span class="status-label">In Progress</span>
+                </button>
+                <button class="status-btn" data-status="2">
+                    <span class="status-icon">🟢</span>
+                    <span class="status-label">Basic</span>
+                </button>
+                <button class="status-btn" data-status="3">
+                    <span class="status-icon">🔵</span>
+                    <span class="status-label">Intermediate</span>
+                </button>
+                <button class="status-btn" data-status="4">
+                    <span class="status-icon">⭐</span>
+                    <span class="status-label">Mastered</span>
+                </button>
+            </div>
+            <button class="modal-close" id="modalClose">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal-overlay hidden" id="settingsModal">
+        <div class="modal settings-modal">
+            <div class="settings-header">
+                <h2>⚙️ Settings</h2>
+                <button class="settings-close" id="settingsClose">×</button>
+            </div>
+            <div class="settings-content">
+                <div class="settings-section">
+                    <h3>Learning Path</h3>
+                    <div class="settings-option">
+                        <label class="settings-toggle">
+                            <input type="checkbox" id="unlockAllChapters" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                        <div class="settings-option-info">
+                            <span class="settings-option-label">Unlock All Chapters</span>
+                            <span class="settings-option-desc">Access all chapters without completing previous
+                                ones</span>
+                        </div>
+                    </div>
+                    <div class="settings-option">
+                        <label class="settings-toggle">
+                            <input type="checkbox" id="showEstimatedTime" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                        <div class="settings-option-info">
+                            <span class="settings-option-label">Show Estimated Time</span>
+                            <span class="settings-option-desc">Display time estimates on resources</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>Data Management</h3>
+                    <div class="settings-actions">
+                        <button class="settings-action-btn" id="exportProgressBtn">📤 Export Progress</button>
+                        <button class="settings-action-btn" id="importProgressBtn">📥 Import Progress</button>
+                        <button class="settings-action-btn danger" id="resetProgressBtn">🗑️ Reset All Progress</button>
+                    </div>
+                    <input type="file" id="importFileInput" accept=".json" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- App Scripts -->
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/roadmap-data.js"></script>
+    <script src="assets/js/state.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

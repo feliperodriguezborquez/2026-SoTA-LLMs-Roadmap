@@ -1,0 +1,1658 @@
+{
+  "version": "2.0.0",
+  "language": "en",
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Deep Learning Fundamentals",
+      "icon": "📘",
+      "description": "Build a solid foundation in neural networks and deep learning concepts.",
+      "resources": [
+        {
+          "id": "ch1-r1",
+          "title": "Deep Learning Book",
+          "url": "https://www.deeplearningbook.org/",
+          "type": "paper",
+          "author": "Goodfellow et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 2400
+        },
+        {
+          "id": "ch1-r2",
+          "title": "Dropout",
+          "url": "https://arxiv.org/abs/1207.0580",
+          "type": "paper",
+          "author": "Hinton et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 45
+        },
+        {
+          "id": "ch1-r3",
+          "title": "Batch Normalization",
+          "url": "https://arxiv.org/abs/1502.03167",
+          "type": "paper",
+          "author": "Ioffe & Szegedy",
+          "difficulty": 2,
+          "estimatedMinutes": 45
+        },
+        {
+          "id": "ch1-r4",
+          "title": "Layer Normalization",
+          "url": "https://arxiv.org/abs/1607.06450",
+          "type": "paper",
+          "author": "Ba et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 45
+        },
+        {
+          "id": "ch1-r5",
+          "title": "Adam Optimizer",
+          "url": "https://arxiv.org/abs/1412.6980",
+          "type": "paper",
+          "author": "Kingma & Ba",
+          "difficulty": 2,
+          "estimatedMinutes": 45
+        },
+        {
+          "id": "ch1-r6",
+          "title": "Weight Decay Decoupled (AdamW)",
+          "url": "https://arxiv.org/abs/1711.05101",
+          "type": "paper",
+          "author": "Loshchilov & Hutter",
+          "difficulty": 2,
+          "estimatedMinutes": 30
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "title": "Transformer Architecture",
+      "icon": "🏗️",
+      "description": "Understand the architecture that powers modern LLMs.",
+      "subsections": [
+        {
+          "id": "ch2-s1",
+          "title": "Core Architecture",
+          "resources": [
+            {
+              "id": "ch2-r1",
+              "title": "Attention Is All You Need",
+              "url": "https://arxiv.org/abs/1706.03762",
+              "type": "paper",
+              "author": "Vaswani et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 120
+            },
+            {
+              "id": "ch2-r2",
+              "title": "GPT-1: Improving Language Understanding",
+              "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf",
+              "type": "paper",
+              "author": "Radford et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch2-r3",
+              "title": "BERT",
+              "url": "https://arxiv.org/abs/1810.04805",
+              "type": "paper",
+              "author": "Devlin et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 90
+            }
+          ]
+        },
+        {
+          "id": "ch2-s2",
+          "title": "Attention Variants (Used in SoTA)",
+          "resources": [
+            {
+              "id": "ch2-r4",
+              "title": "Multi-Query Attention (MQA)",
+              "url": "https://arxiv.org/abs/1911.02150",
+              "type": "paper",
+              "author": "Shazeer",
+              "difficulty": 2,
+              "estimatedMinutes": 30
+            },
+            {
+              "id": "ch2-r5",
+              "title": "Grouped Query Attention (GQA)",
+              "url": "https://arxiv.org/abs/2305.13245",
+              "type": "paper",
+              "author": "Ainslie et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch2-r6",
+              "title": "Multi-Latent Attention (MLA)",
+              "url": "https://arxiv.org/abs/2405.04434",
+              "type": "paper",
+              "author": "DeepSeek",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch2-r7",
+              "title": "Flash Attention",
+              "url": "https://arxiv.org/abs/2205.14135",
+              "type": "paper",
+              "author": "Dao et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch2-r8",
+              "title": "Flash Attention 2",
+              "url": "https://arxiv.org/abs/2307.08691",
+              "type": "paper",
+              "author": "Dao",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch2-r9",
+              "title": "Flash Attention 3",
+              "url": "https://arxiv.org/abs/2407.08608",
+              "type": "paper",
+              "author": "Shah et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            }
+          ]
+        },
+        {
+          "id": "ch2-s3",
+          "title": "Position Encodings",
+          "resources": [
+            {
+              "id": "ch2-r10",
+              "title": "Rotary Position Embeddings (RoPE)",
+              "url": "https://arxiv.org/abs/2104.09864",
+              "type": "paper",
+              "author": "Su et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch2-r11",
+              "title": "ALiBi",
+              "url": "https://arxiv.org/abs/2108.12409",
+              "type": "paper",
+              "author": "Press et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            }
+          ]
+        },
+        {
+          "id": "ch2-s4",
+          "title": "FFN & Normalization",
+          "resources": [
+            {
+              "id": "ch2-r12",
+              "title": "SwiGLU Activation",
+              "url": "https://arxiv.org/abs/2002.05202",
+              "type": "paper",
+              "author": "Shazeer",
+              "difficulty": 2,
+              "estimatedMinutes": 30
+            },
+            {
+              "id": "ch2-r13",
+              "title": "RMSNorm",
+              "url": "https://arxiv.org/abs/1910.07467",
+              "type": "paper",
+              "author": "Zhang & Sennrich",
+              "difficulty": 2,
+              "estimatedMinutes": 30
+            },
+            {
+              "id": "ch2-r14",
+              "title": "Mixture of Experts (MoE)",
+              "url": "https://arxiv.org/abs/2101.03961",
+              "type": "paper",
+              "author": "Fedus et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch2-r15",
+              "title": "DeepSeekMoE",
+              "url": "https://arxiv.org/abs/2401.06066",
+              "type": "paper",
+              "author": "DeepSeek",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "Modern Model Architectures",
+      "icon": "⚡",
+      "description": "Study the technical reports of leading LLMs.",
+      "subsections": [
+        {
+          "id": "ch3-s1",
+          "title": "OpenAI",
+          "resources": [
+            {
+              "id": "ch3-r1",
+              "title": "GPT-2",
+              "url": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+              "type": "paper",
+              "author": "Radford et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch3-r2",
+              "title": "GPT-3",
+              "url": "https://arxiv.org/abs/2005.14165",
+              "type": "paper",
+              "author": "Brown et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 120
+            },
+            {
+              "id": "ch3-r3",
+              "title": "GPT-4 Technical Report",
+              "url": "https://arxiv.org/abs/2303.08774",
+              "type": "paper",
+              "author": "OpenAI",
+              "difficulty": 2,
+              "estimatedMinutes": 90
+            }
+          ]
+        },
+        {
+          "id": "ch3-s2",
+          "title": "Meta (LLaMA)",
+          "resources": [
+            {
+              "id": "ch3-r4",
+              "title": "LLaMA",
+              "url": "https://arxiv.org/abs/2302.13971",
+              "type": "paper",
+              "author": "Touvron et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch3-r5",
+              "title": "LLaMA 2",
+              "url": "https://arxiv.org/abs/2307.09288",
+              "type": "paper",
+              "author": "Touvron et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 120
+            },
+            {
+              "id": "ch3-r6",
+              "title": "LLaMA 3",
+              "url": "https://arxiv.org/abs/2407.21783",
+              "type": "paper",
+              "author": "Meta AI",
+              "difficulty": 2,
+              "estimatedMinutes": 120
+            }
+          ]
+        },
+        {
+          "id": "ch3-s3",
+          "title": "DeepSeek",
+          "resources": [
+            {
+              "id": "ch3-r7",
+              "title": "DeepSeek-V2",
+              "url": "https://arxiv.org/abs/2405.04434",
+              "type": "paper",
+              "author": "DeepSeek",
+              "difficulty": 3,
+              "estimatedMinutes": 120
+            },
+            {
+              "id": "ch3-r8",
+              "title": "DeepSeek-V3",
+              "url": "https://arxiv.org/abs/2412.19437",
+              "type": "paper",
+              "author": "DeepSeek",
+              "difficulty": 3,
+              "estimatedMinutes": 150
+            }
+          ]
+        },
+        {
+          "id": "ch3-s4",
+          "title": "Other Leading Models",
+          "resources": [
+            {
+              "id": "ch3-r9",
+              "title": "Mistral 7B",
+              "url": "https://arxiv.org/abs/2310.06825",
+              "type": "paper",
+              "author": "Mistral AI",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch3-r10",
+              "title": "Mixtral 8x7B",
+              "url": "https://arxiv.org/abs/2401.04088",
+              "type": "paper",
+              "author": "Mistral AI",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch3-r11",
+              "title": "Qwen2 Technical Report",
+              "url": "https://arxiv.org/abs/2407.10671",
+              "type": "paper",
+              "author": "Alibaba",
+              "difficulty": 2,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch3-r12",
+              "title": "Gemma",
+              "url": "https://arxiv.org/abs/2403.08295",
+              "type": "paper",
+              "author": "Google",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch3-r13",
+              "title": "Gemma 2",
+              "url": "https://arxiv.org/abs/2408.00118",
+              "type": "paper",
+              "author": "Google",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch3-r14",
+              "title": "Phi-3 Technical Report",
+              "url": "https://arxiv.org/abs/2404.14219",
+              "type": "paper",
+              "author": "Microsoft",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch3-r15",
+              "title": "OLMo",
+              "url": "https://arxiv.org/abs/2402.00838",
+              "type": "paper",
+              "author": "AI2",
+              "difficulty": 2,
+              "estimatedMinutes": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch4",
+      "title": "Pre-training",
+      "icon": "🎯",
+      "description": "Learn how LLMs are trained from scratch at scale.",
+      "subsections": [
+        {
+          "id": "ch4-s1",
+          "title": "Scaling Laws",
+          "resources": [
+            {
+              "id": "ch4-r1",
+              "title": "Scaling Laws for Neural LMs",
+              "url": "https://arxiv.org/abs/2001.08361",
+              "type": "paper",
+              "author": "Kaplan et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch4-r2",
+              "title": "Chinchilla Scaling",
+              "url": "https://arxiv.org/abs/2203.15556",
+              "type": "paper",
+              "author": "Hoffmann et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch4-r3",
+              "title": "Scaling Data-Constrained LMs",
+              "url": "https://arxiv.org/abs/2305.16264",
+              "type": "paper",
+              "author": "Muennighoff et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            }
+          ]
+        },
+        {
+          "id": "ch4-s2",
+          "title": "Training Data",
+          "resources": [
+            {
+              "id": "ch4-r4",
+              "title": "The Pile",
+              "url": "https://arxiv.org/abs/2101.00027",
+              "type": "paper",
+              "author": "Gao et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch4-r5",
+              "title": "RedPajama",
+              "url": "https://arxiv.org/abs/2411.12372",
+              "type": "paper",
+              "author": "Together AI",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch4-r6",
+              "title": "FineWeb",
+              "url": "https://arxiv.org/abs/2406.17557",
+              "type": "paper",
+              "author": "HuggingFace",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch4-r7",
+              "title": "Dolma",
+              "url": "https://arxiv.org/abs/2402.00159",
+              "type": "paper",
+              "author": "AI2",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch4-r8",
+              "title": "DCLM (DataComp-LM)",
+              "url": "https://arxiv.org/abs/2406.11794",
+              "type": "paper",
+              "author": "Li et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            }
+          ]
+        },
+        {
+          "id": "ch4-s3",
+          "title": "Distributed Training",
+          "resources": [
+            {
+              "id": "ch4-r9",
+              "title": "Megatron-LM",
+              "url": "https://arxiv.org/abs/1909.08053",
+              "type": "paper",
+              "author": "NVIDIA",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch4-r10",
+              "title": "ZeRO: Memory Optimization",
+              "url": "https://arxiv.org/abs/1910.02054",
+              "type": "paper",
+              "author": "Rajbhandari et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch4-r11",
+              "title": "ZeRO++ (Communication Efficient)",
+              "url": "https://arxiv.org/abs/2306.10209",
+              "type": "paper",
+              "author": "Wang et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch4-r12",
+              "title": "Sequence Parallelism",
+              "url": "https://arxiv.org/abs/2105.13120",
+              "type": "paper",
+              "author": "Korthikanti et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            }
+          ]
+        },
+        {
+          "id": "ch4-s4",
+          "title": "Training Techniques",
+          "resources": [
+            {
+              "id": "ch4-r13",
+              "title": "μP (Maximal Update Parameterization)",
+              "url": "https://arxiv.org/abs/2203.03466",
+              "type": "paper",
+              "author": "Yang et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch4-r14",
+              "title": "Mixed Precision Training",
+              "url": "https://arxiv.org/abs/1710.03740",
+              "type": "paper",
+              "author": "Micikevicius et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch4-r15",
+              "title": "Gradient Checkpointing",
+              "url": "https://arxiv.org/abs/1604.06174",
+              "type": "paper",
+              "author": "Chen et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch5",
+      "title": "Tokenization",
+      "icon": "🔤",
+      "description": "Understand how text is converted to tokens for LLMs.",
+      "resources": [
+        {
+          "id": "ch5-r1",
+          "title": "BPE (Original)",
+          "url": "https://arxiv.org/abs/1508.07909",
+          "type": "paper",
+          "author": "Sennrich et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 45
+        },
+        {
+          "id": "ch5-r2",
+          "title": "SentencePiece",
+          "url": "https://arxiv.org/abs/1808.06226",
+          "type": "paper",
+          "author": "Kudo & Richardson",
+          "difficulty": 2,
+          "estimatedMinutes": 45
+        },
+        {
+          "id": "ch5-r3",
+          "title": "Unigram Language Model",
+          "url": "https://arxiv.org/abs/1804.10959",
+          "type": "paper",
+          "author": "Kudo",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        }
+      ]
+    },
+    {
+      "id": "ch6",
+      "title": "Fine-tuning & PEFT",
+      "icon": "🔧",
+      "description": "Master parameter-efficient fine-tuning techniques.",
+      "resources": [
+        {
+          "id": "ch6-r1",
+          "title": "FLAN - Instruction Tuning",
+          "url": "https://arxiv.org/abs/2109.01652",
+          "type": "paper",
+          "author": "Wei et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 90
+        },
+        {
+          "id": "ch6-r2",
+          "title": "LoRA",
+          "url": "https://arxiv.org/abs/2106.09685",
+          "type": "paper",
+          "author": "Hu et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch6-r3",
+          "title": "QLoRA",
+          "url": "https://arxiv.org/abs/2305.14314",
+          "type": "paper",
+          "author": "Dettmers et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch6-r4",
+          "title": "DoRA",
+          "url": "https://arxiv.org/abs/2402.09353",
+          "type": "paper",
+          "author": "Liu et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 45
+        },
+        {
+          "id": "ch6-r5",
+          "title": "Prefix Tuning",
+          "url": "https://arxiv.org/abs/2101.00190",
+          "type": "paper",
+          "author": "Li & Liang",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch6-r6",
+          "title": "Self-Instruct",
+          "url": "https://arxiv.org/abs/2212.10560",
+          "type": "paper",
+          "author": "Wang et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        }
+      ]
+    },
+    {
+      "id": "ch7",
+      "title": "Alignment & RLHF",
+      "icon": "🎯",
+      "description": "Align LLMs with human preferences using RL techniques.",
+      "subsections": [
+        {
+          "id": "ch7-s1",
+          "title": "RLHF Fundamentals",
+          "resources": [
+            {
+              "id": "ch7-r1",
+              "title": "InstructGPT",
+              "url": "https://arxiv.org/abs/2203.02155",
+              "type": "paper",
+              "author": "Ouyang et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 120
+            },
+            {
+              "id": "ch7-r2",
+              "title": "PPO Algorithm",
+              "url": "https://arxiv.org/abs/1707.06347",
+              "type": "paper",
+              "author": "Schulman et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch7-r3",
+              "title": "Constitutional AI",
+              "url": "https://arxiv.org/abs/2212.08073",
+              "type": "paper",
+              "author": "Bai et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch7-r4",
+              "title": "RLAIF",
+              "url": "https://arxiv.org/abs/2309.00267",
+              "type": "paper",
+              "author": "Lee et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            }
+          ]
+        },
+        {
+          "id": "ch7-s2",
+          "title": "Direct Preference Optimization",
+          "resources": [
+            {
+              "id": "ch7-r5",
+              "title": "DPO",
+              "url": "https://arxiv.org/abs/2305.18290",
+              "type": "paper",
+              "author": "Rafailov et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch7-r6",
+              "title": "IPO",
+              "url": "https://arxiv.org/abs/2310.12036",
+              "type": "paper",
+              "author": "Azar et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch7-r7",
+              "title": "ORPO",
+              "url": "https://arxiv.org/abs/2403.07691",
+              "type": "paper",
+              "author": "Hong et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch7-r8",
+              "title": "SimPO",
+              "url": "https://arxiv.org/abs/2405.14734",
+              "type": "paper",
+              "author": "Meng et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch7-r9",
+              "title": "KTO",
+              "url": "https://arxiv.org/abs/2402.01306",
+              "type": "paper",
+              "author": "Ethayarajh et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            }
+          ]
+        },
+        {
+          "id": "ch7-s3",
+          "title": "RL for Reasoning (RLVR)",
+          "resources": [
+            {
+              "id": "ch7-r10",
+              "title": "GRPO (DeepSeekMath)",
+              "url": "https://arxiv.org/abs/2402.03300",
+              "type": "paper",
+              "author": "DeepSeek",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch7-r11",
+              "title": "Process Reward Models",
+              "url": "https://arxiv.org/abs/2305.20050",
+              "type": "paper",
+              "author": "Lightman et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch7-r12",
+              "title": "Beyond Human Data: Scaling RL",
+              "url": "https://arxiv.org/abs/2312.02179",
+              "type": "paper",
+              "author": "Singh et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch8",
+      "title": "Inference Optimization",
+      "icon": "🚀",
+      "description": "Deploy LLMs efficiently in production.",
+      "subsections": [
+        {
+          "id": "ch8-s1",
+          "title": "KV Cache & Memory",
+          "resources": [
+            {
+              "id": "ch8-r1",
+              "title": "Efficient Transformers Survey",
+              "url": "https://arxiv.org/abs/2009.06732",
+              "type": "paper",
+              "author": "Tay et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 120
+            },
+            {
+              "id": "ch8-r2",
+              "title": "PagedAttention (vLLM)",
+              "url": "https://arxiv.org/abs/2309.06180",
+              "type": "paper",
+              "author": "Kwon et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch8-r3",
+              "title": "SGLang",
+              "url": "https://arxiv.org/abs/2312.07104",
+              "type": "paper",
+              "author": "Zheng et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            }
+          ]
+        },
+        {
+          "id": "ch8-s2",
+          "title": "Speculative Decoding",
+          "resources": [
+            {
+              "id": "ch8-r4",
+              "title": "Speculative Decoding",
+              "url": "https://arxiv.org/abs/2211.17192",
+              "type": "paper",
+              "author": "Leviathan et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch8-r5",
+              "title": "Medusa",
+              "url": "https://arxiv.org/abs/2401.10774",
+              "type": "paper",
+              "author": "Cai et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch8-r6",
+              "title": "EAGLE",
+              "url": "https://arxiv.org/abs/2401.15077",
+              "type": "paper",
+              "author": "Li et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch8-r7",
+              "title": "EAGLE-2",
+              "url": "https://arxiv.org/abs/2406.16858",
+              "type": "paper",
+              "author": "Li et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 45
+            }
+          ]
+        },
+        {
+          "id": "ch8-s3",
+          "title": "Quantization",
+          "resources": [
+            {
+              "id": "ch8-r8",
+              "title": "LLM.int8()",
+              "url": "https://arxiv.org/abs/2208.07339",
+              "type": "paper",
+              "author": "Dettmers et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch8-r9",
+              "title": "GPTQ",
+              "url": "https://arxiv.org/abs/2210.17323",
+              "type": "paper",
+              "author": "Frantar et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch8-r10",
+              "title": "AWQ",
+              "url": "https://arxiv.org/abs/2306.00978",
+              "type": "paper",
+              "author": "Lin et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch8-r11",
+              "title": "QuIP#",
+              "url": "https://arxiv.org/abs/2402.04396",
+              "type": "paper",
+              "author": "Tseng et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch8-r12",
+              "title": "AQLM",
+              "url": "https://arxiv.org/abs/2401.06118",
+              "type": "paper",
+              "author": "Egiazarian et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            }
+          ]
+        },
+        {
+          "id": "ch8-s4",
+          "title": "Batching & Serving",
+          "resources": [
+            {
+              "id": "ch8-r13",
+              "title": "Orca (Continuous Batching)",
+              "url": "https://www.usenix.org/conference/osdi22/presentation/yu",
+              "type": "paper",
+              "author": "Yu et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch8-r14",
+              "title": "Sarathi-Serve",
+              "url": "https://arxiv.org/abs/2403.02310",
+              "type": "paper",
+              "author": "Agrawal et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch9",
+      "title": "Long Context",
+      "icon": "📏",
+      "description": "Extend context length capabilities of LLMs.",
+      "resources": [
+        {
+          "id": "ch9-r1",
+          "title": "YaRN",
+          "url": "https://arxiv.org/abs/2309.00071",
+          "type": "paper",
+          "author": "Peng et al.",
+          "difficulty": 3,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch9-r2",
+          "title": "LongRoPE",
+          "url": "https://arxiv.org/abs/2402.13753",
+          "type": "paper",
+          "author": "Ding et al.",
+          "difficulty": 3,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch9-r3",
+          "title": "LongLoRA",
+          "url": "https://arxiv.org/abs/2309.12307",
+          "type": "paper",
+          "author": "Chen et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch9-r4",
+          "title": "StreamingLLM",
+          "url": "https://arxiv.org/abs/2309.17453",
+          "type": "paper",
+          "author": "Xiao et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 45
+        },
+        {
+          "id": "ch9-r5",
+          "title": "Infini-Attention",
+          "url": "https://arxiv.org/abs/2404.07143",
+          "type": "paper",
+          "author": "Munkhdalai et al.",
+          "difficulty": 3,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch9-r6",
+          "title": "Ring Attention",
+          "url": "https://arxiv.org/abs/2310.01889",
+          "type": "paper",
+          "author": "Liu et al.",
+          "difficulty": 3,
+          "estimatedMinutes": 60
+        }
+      ]
+    },
+    {
+      "id": "ch10",
+      "title": "RAG & Retrieval",
+      "icon": "🔍",
+      "description": "Augment LLMs with external knowledge retrieval.",
+      "subsections": [
+        {
+          "id": "ch10-s1",
+          "title": "Foundations",
+          "resources": [
+            {
+              "id": "ch10-r1",
+              "title": "RAG (Original)",
+              "url": "https://arxiv.org/abs/2005.11401",
+              "type": "paper",
+              "author": "Lewis et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch10-r2",
+              "title": "DPR (Dense Retrieval)",
+              "url": "https://arxiv.org/abs/2004.04906",
+              "type": "paper",
+              "author": "Karpukhin et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch10-r3",
+              "title": "Contriever",
+              "url": "https://arxiv.org/abs/2112.09118",
+              "type": "paper",
+              "author": "Izacard et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            }
+          ]
+        },
+        {
+          "id": "ch10-s2",
+          "title": "Advanced Retrieval",
+          "resources": [
+            {
+              "id": "ch10-r4",
+              "title": "ColBERT",
+              "url": "https://arxiv.org/abs/2004.12832",
+              "type": "paper",
+              "author": "Khattab & Zaharia",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch10-r5",
+              "title": "ColBERTv2",
+              "url": "https://arxiv.org/abs/2112.01488",
+              "type": "paper",
+              "author": "Santhanam et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch10-r6",
+              "title": "HyDE",
+              "url": "https://arxiv.org/abs/2212.10496",
+              "type": "paper",
+              "author": "Gao et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            }
+          ]
+        },
+        {
+          "id": "ch10-s3",
+          "title": "Advanced RAG",
+          "resources": [
+            {
+              "id": "ch10-r7",
+              "title": "Self-RAG",
+              "url": "https://arxiv.org/abs/2310.11511",
+              "type": "paper",
+              "author": "Asai et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch10-r8",
+              "title": "CRAG",
+              "url": "https://arxiv.org/abs/2401.15884",
+              "type": "paper",
+              "author": "Yan et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch10-r9",
+              "title": "RAFT",
+              "url": "https://arxiv.org/abs/2403.10131",
+              "type": "paper",
+              "author": "Zhang et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch10-r10",
+              "title": "GraphRAG",
+              "url": "https://arxiv.org/abs/2404.16130",
+              "type": "paper",
+              "author": "Edge et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch11",
+      "title": "Reasoning & Test-Time Compute",
+      "icon": "🧠",
+      "description": "Enhance LLM reasoning with inference-time techniques.",
+      "subsections": [
+        {
+          "id": "ch11-s1",
+          "title": "Prompting Techniques",
+          "resources": [
+            {
+              "id": "ch11-r1",
+              "title": "Chain-of-Thought",
+              "url": "https://arxiv.org/abs/2201.11903",
+              "type": "paper",
+              "author": "Wei et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch11-r2",
+              "title": "Self-Consistency",
+              "url": "https://arxiv.org/abs/2203.11171",
+              "type": "paper",
+              "author": "Wang et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch11-r3",
+              "title": "Tree of Thoughts",
+              "url": "https://arxiv.org/abs/2305.10601",
+              "type": "paper",
+              "author": "Yao et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            }
+          ]
+        },
+        {
+          "id": "ch11-s2",
+          "title": "Scaling Test-Time Compute",
+          "resources": [
+            {
+              "id": "ch11-r4",
+              "title": "STaR (Self-Taught Reasoner)",
+              "url": "https://arxiv.org/abs/2203.14465",
+              "type": "paper",
+              "author": "Zelikman et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch11-r5",
+              "title": "Quiet-STaR",
+              "url": "https://arxiv.org/abs/2403.09629",
+              "type": "paper",
+              "author": "Zelikman et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch11-r6",
+              "title": "Scaling LLM Test-Time Compute",
+              "url": "https://arxiv.org/abs/2408.03314",
+              "type": "paper",
+              "author": "Snell et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 90
+            }
+          ]
+        },
+        {
+          "id": "ch11-s3",
+          "title": "Reasoning Models",
+          "resources": [
+            {
+              "id": "ch11-r7",
+              "title": "DeepSeek-R1",
+              "url": "https://arxiv.org/abs/2501.12948",
+              "type": "paper",
+              "author": "DeepSeek",
+              "difficulty": 3,
+              "estimatedMinutes": 120
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch12",
+      "title": "Agents & Tool Use",
+      "icon": "🤖",
+      "description": "Build LLM-powered autonomous agents.",
+      "resources": [
+        {
+          "id": "ch12-r1",
+          "title": "ReAct",
+          "url": "https://arxiv.org/abs/2210.03629",
+          "type": "paper",
+          "author": "Yao et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch12-r2",
+          "title": "Toolformer",
+          "url": "https://arxiv.org/abs/2302.04761",
+          "type": "paper",
+          "author": "Schick et al.",
+          "difficulty": 3,
+          "estimatedMinutes": 90
+        },
+        {
+          "id": "ch12-r3",
+          "title": "HuggingGPT",
+          "url": "https://arxiv.org/abs/2303.17580",
+          "type": "paper",
+          "author": "Shen et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch12-r4",
+          "title": "Gorilla (API Calls)",
+          "url": "https://arxiv.org/abs/2305.15334",
+          "type": "paper",
+          "author": "Patil et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch12-r5",
+          "title": "OS-Copilot",
+          "url": "https://arxiv.org/abs/2402.07456",
+          "type": "paper",
+          "author": "Wu et al.",
+          "difficulty": 3,
+          "estimatedMinutes": 60
+        }
+      ]
+    },
+    {
+      "id": "ch13",
+      "title": "Coding LLMs",
+      "icon": "💻",
+      "description": "Specialize in code generation and understanding.",
+      "subsections": [
+        {
+          "id": "ch13-s1",
+          "title": "Code Models",
+          "resources": [
+            {
+              "id": "ch13-r1",
+              "title": "Codex",
+              "url": "https://arxiv.org/abs/2107.03374",
+              "type": "paper",
+              "author": "Chen et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch13-r2",
+              "title": "CodeLlama",
+              "url": "https://arxiv.org/abs/2308.12950",
+              "type": "paper",
+              "author": "Rozière et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 90
+            },
+            {
+              "id": "ch13-r3",
+              "title": "StarCoder",
+              "url": "https://arxiv.org/abs/2305.06161",
+              "type": "paper",
+              "author": "Li et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch13-r4",
+              "title": "StarCoder2",
+              "url": "https://arxiv.org/abs/2402.19173",
+              "type": "paper",
+              "author": "Lozhkov et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch13-r5",
+              "title": "DeepSeek-Coder",
+              "url": "https://arxiv.org/abs/2401.14196",
+              "type": "paper",
+              "author": "Guo et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch13-r6",
+              "title": "DeepSeek-Coder-V2",
+              "url": "https://arxiv.org/abs/2406.11931",
+              "type": "paper",
+              "author": "Zhu et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            }
+          ]
+        },
+        {
+          "id": "ch13-s2",
+          "title": "Code Agents",
+          "resources": [
+            {
+              "id": "ch13-r7",
+              "title": "SWE-Agent",
+              "url": "https://arxiv.org/abs/2405.15793",
+              "type": "paper",
+              "author": "Yang et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            },
+            {
+              "id": "ch13-r8",
+              "title": "OpenHands (OpenDevin)",
+              "url": "https://arxiv.org/abs/2407.16741",
+              "type": "paper",
+              "author": "Wang et al.",
+              "difficulty": 3,
+              "estimatedMinutes": 60
+            }
+          ]
+        },
+        {
+          "id": "ch13-s3",
+          "title": "Code Benchmarks",
+          "resources": [
+            {
+              "id": "ch13-r9",
+              "title": "HumanEval",
+              "url": "https://arxiv.org/abs/2107.03374",
+              "type": "paper",
+              "author": "Chen et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 30
+            },
+            {
+              "id": "ch13-r10",
+              "title": "SWE-bench",
+              "url": "https://arxiv.org/abs/2310.06770",
+              "type": "paper",
+              "author": "Jimenez et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch13-r11",
+              "title": "LiveCodeBench",
+              "url": "https://arxiv.org/abs/2403.07974",
+              "type": "paper",
+              "author": "Jain et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch14",
+      "title": "Evaluation & Benchmarks",
+      "icon": "📊",
+      "description": "Measure and compare LLM capabilities.",
+      "subsections": [
+        {
+          "id": "ch14-s1",
+          "title": "Knowledge & Reasoning",
+          "resources": [
+            {
+              "id": "ch14-r1",
+              "title": "MMLU",
+              "url": "https://arxiv.org/abs/2009.03300",
+              "type": "paper",
+              "author": "Hendrycks et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch14-r2",
+              "title": "MMLU-Pro",
+              "url": "https://arxiv.org/abs/2406.01574",
+              "type": "paper",
+              "author": "Wang et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch14-r3",
+              "title": "GPQA",
+              "url": "https://arxiv.org/abs/2311.12022",
+              "type": "paper",
+              "author": "Rein et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch14-r4",
+              "title": "ARC-AGI",
+              "url": "https://arxiv.org/abs/1911.01547",
+              "type": "paper",
+              "author": "Chollet",
+              "difficulty": 2,
+              "estimatedMinutes": 60
+            }
+          ]
+        },
+        {
+          "id": "ch14-s2",
+          "title": "Math",
+          "resources": [
+            {
+              "id": "ch14-r5",
+              "title": "GSM8K",
+              "url": "https://arxiv.org/abs/2110.14168",
+              "type": "paper",
+              "author": "Cobbe et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch14-r6",
+              "title": "MATH",
+              "url": "https://arxiv.org/abs/2103.03874",
+              "type": "paper",
+              "author": "Hendrycks et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            }
+          ]
+        },
+        {
+          "id": "ch14-s3",
+          "title": "Instruction Following",
+          "resources": [
+            {
+              "id": "ch14-r7",
+              "title": "IFEval",
+              "url": "https://arxiv.org/abs/2311.07911",
+              "type": "paper",
+              "author": "Zhou et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch14-r8",
+              "title": "AlpacaEval",
+              "url": "https://arxiv.org/abs/2404.04475",
+              "type": "paper",
+              "author": "Dubois et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch14-r9",
+              "title": "MT-Bench",
+              "url": "https://arxiv.org/abs/2306.05685",
+              "type": "paper",
+              "author": "Zheng et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            }
+          ]
+        },
+        {
+          "id": "ch14-s4",
+          "title": "Long Context",
+          "resources": [
+            {
+              "id": "ch14-r10",
+              "title": "RULER",
+              "url": "https://arxiv.org/abs/2404.06654",
+              "type": "paper",
+              "author": "Hsieh et al.",
+              "difficulty": 2,
+              "estimatedMinutes": 45
+            },
+            {
+              "id": "ch14-r11",
+              "title": "Needle in a Haystack",
+              "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack",
+              "type": "paper",
+              "author": "Kamradt",
+              "difficulty": 1,
+              "estimatedMinutes": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch15",
+      "title": "Safety & Security",
+      "icon": "🛡️",
+      "description": "Understand LLM vulnerabilities and safety measures.",
+      "resources": [
+        {
+          "id": "ch15-r1",
+          "title": "Red Teaming LLMs",
+          "url": "https://arxiv.org/abs/2202.03286",
+          "type": "paper",
+          "author": "Perez et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch15-r2",
+          "title": "Llama Guard",
+          "url": "https://arxiv.org/abs/2312.06674",
+          "type": "paper",
+          "author": "Inan et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 45
+        },
+        {
+          "id": "ch15-r3",
+          "title": "TruthfulQA",
+          "url": "https://arxiv.org/abs/2109.07958",
+          "type": "paper",
+          "author": "Lin et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 45
+        },
+        {
+          "id": "ch15-r4",
+          "title": "Universal Adversarial Triggers (GCG)",
+          "url": "https://arxiv.org/abs/2307.15043",
+          "type": "paper",
+          "author": "Zou et al.",
+          "difficulty": 3,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch15-r5",
+          "title": "Representation Engineering",
+          "url": "https://arxiv.org/abs/2310.01405",
+          "type": "paper",
+          "author": "Zou et al.",
+          "difficulty": 3,
+          "estimatedMinutes": 90
+        },
+        {
+          "id": "ch15-r6",
+          "title": "Sleeper Agents",
+          "url": "https://arxiv.org/abs/2401.05566",
+          "type": "paper",
+          "author": "Hubinger et al.",
+          "difficulty": 3,
+          "estimatedMinutes": 90
+        }
+      ]
+    },
+    {
+      "id": "ch16",
+      "title": "Multimodality",
+      "icon": "🌐",
+      "description": "Extend LLMs to process multiple modalities.",
+      "resources": [
+        {
+          "id": "ch16-r1",
+          "title": "CLIP",
+          "url": "https://arxiv.org/abs/2103.00020",
+          "type": "paper",
+          "author": "Radford et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 90
+        },
+        {
+          "id": "ch16-r2",
+          "title": "Vision Transformer (ViT)",
+          "url": "https://arxiv.org/abs/2010.11929",
+          "type": "paper",
+          "author": "Dosovitskiy et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 90
+        },
+        {
+          "id": "ch16-r3",
+          "title": "LLaVA",
+          "url": "https://arxiv.org/abs/2304.08485",
+          "type": "paper",
+          "author": "Liu et al.",
+          "difficulty": 3,
+          "estimatedMinutes": 90
+        },
+        {
+          "id": "ch16-r4",
+          "title": "LLaVA-1.5",
+          "url": "https://arxiv.org/abs/2310.03744",
+          "type": "paper",
+          "author": "Liu et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch16-r5",
+          "title": "Whisper",
+          "url": "https://arxiv.org/abs/2212.04356",
+          "type": "paper",
+          "author": "Radford et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        },
+        {
+          "id": "ch16-r6",
+          "title": "SigLIP",
+          "url": "https://arxiv.org/abs/2303.15343",
+          "type": "paper",
+          "author": "Zhai et al.",
+          "difficulty": 2,
+          "estimatedMinutes": 60
+        }
+      ]
+    }
+  ]
+}
